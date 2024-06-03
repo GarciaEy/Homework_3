@@ -1,0 +1,59 @@
+.UE {
+  background-color: #540d6e;
+  height: 320;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 40px;
+}
+.UE .title {
+  height: 35px;
+  margin-top: -30px;
+  width: 329px;
+  border-bottom: solid 2px white;
+  padding-bottom: 40px;
+}
+.UE .events {
+  height: 124px;
+  margin-top: -120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.UE .events .event {
+  width: 210px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.UE .events .event .date {
+  width: 60px;
+  height: 60px;
+  background-color: #ee4367;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.UE .events .event .ed {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 12px;
+  width: 140px;
+}

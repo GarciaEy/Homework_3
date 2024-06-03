@@ -1,0 +1,119 @@
+footer {
+	height: 455px;
+	background-color: #ee4367;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.adress {
+		width: 700px;
+		color: white;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-size: 20px;
+		font-style: italic;
+		margin-top: -100px;
+		margin: 0 auto;
+		justify-content: space-between;
+		align-items: center;
+		//padding-left: ;
+			
+			
+		
+			
+	}
+
+	.number {
+		width: 700px;
+		color: white;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-size: 16px;
+		font-style: italic;
+		margin-top: 100px;
+		
+	}
+
+	.email {
+		width: 700px;
+		color: white;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-size: 20px;
+		font-style: italic;
+		margin-top: 200px;
+	}
+
+
+
+
+	.ftlogo {
+		position: relative;
+		width: 150px;
+		height: 42px;
+		border: solid 2px white;
+		font-size: 25px;
+		margin-top: -300px;
+		//margin-left: 700px;
+		
+		
+			span {
+				position: absolute;
+				bottom: -5px;
+				color: white;
+				}
+		
+			}
+
+	.signup {
+		height: 60px;
+		display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-right: 400px;
+			margin-top:300px ;
+		input {
+			height: 100%;
+			width: 529px;
+			background-color: #f56b88;
+			border: none;
+			color: rgba(238, 67, 103, .8);
+			font-size: 16px;
+			padding-left: 15px;
+			
+		}
+
+		::placeholder {
+			color: rgba(238, 67, 103, .8);
+			opacity: 1;
+	}	
+
+		.button {
+			height: 100%;
+			width: 167px;
+			background-color: white;
+			display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding-left: 30px;
+				color: #ee4367;
+
+		}
+	}
+}
+
+@media only all and (max-width:980px){
+	.ftlogo {
+		padding: 0 30px;
+	}
+	.signup {
+		padding: 0 30px;
+	}
+} 
+
+@media only all and (max-width:800px) {
+	.ftlogo {
+		padding: 0 10px;
+	}
+
+	.signup {
+		padding: 0 10px;
+	}
+}

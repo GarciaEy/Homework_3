@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: ptser;
+  src: url(../css/PTSerif-Regular.ttf);
+}
+.nav-wrapper {
+  background-color: red;
+  height: 90px;
+  width: 100%;
+  position: fixed;
+}
+.nav-wrapper nav {
+  max-width: 980px;
+  height: 90px;
+  margin: 0 auto;
+  border-bottom: solid 2px white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav-wrapper nav .logo {
+  position: relative;
+  width: 92px;
+  height: 42px;
+  border: solid 2px white;
+  font-size: 25px;
+}
+.nav-wrapper nav .logo span {
+  position: absolute;
+  bottom: -5px;
+  color: white;
+}
+.nav-wrapper nav .links {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.nav-wrapper nav .links a {
+  text-decoration: none;
+  color: white;
+}
+.nav-wrapper nav .links span {
+  color: #ee4367;
+}
+
+@media only all and (max-width: 980px) {
+  .nav-wrapper nav {
+    padding: 0 30px;
+  }
+}
+@media only all and (max-width: 800px) {
+  .nav-wrapper nav {
+    padding: 0 10px;
+  }
+}
+.hero {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 64, 0.8)), to(rgba(255, 209, 64, 0.8))), url(../images/home-hero.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/home-hero.jpg);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero .centered-content {
+  width: 700px;
+  background-color: 255;
+  color: white;
+}
+.hero .centered-content .box {
+  width: 121.62px;
+  height: 40px;
+  background-color: #ee4367;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 25px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.hero .centered-content h1 {
+  padding-left: 225px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.hero .centered-content .wide {
+  width: 700px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  padding-left: 25px;
+  padding-top: 50px;
+}
+.hero .centered-content .small {
+  width: 700px;
+  color: #EE4367;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
+  padding-left: 250px;
+  font-size: 20px;
+}
+
+.quote {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content {
+  width: 789px;
+}
+.content .quote-text {
+  font-style: italic;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: #FFD140;
+}
+.content .author {
+  color: #ee4367;
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+.content .title {
+  font-size: 10px;
+  color: #A8A8A8;
+}
+
+@media (max-width: 1140px) {
+  .quote {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 210px;
+    margin: 0 auto;
+  }
+  .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 210px;
+    margin: 0 auto;
+  }
+}
+.upcoming-events {
+  background-color: #540d6e;
+  color: white;
+  padding: 40px;
+}
+.upcoming-events .title {
+  width: 392px;
+  height: 35px;
+  border-bottom: 2px solid white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-bottom: 40px;
+}
+.upcoming-events .title h1 {
+  font-size: 25px;
+}
+.upcoming-events .events {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.upcoming-events .events .event {
+  width: 210px;
+  height: 124px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.upcoming-events .events .event .date {
+  width: 60px;
+  height: 60px;
+  background-color: #ee4376;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.upcoming-events .events .event .event-detail {
+  width: 140px;
+  font-family: ptser;
+  font-size: 15px;
+}
+.upcoming-events .events .event .event-detail .highlight {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+}
+.upcoming-events .events .event .event-detail .details {
+  color: #ee4376;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 13px;
+}
+
+@media (max-width: 1140px) {
+  .upcoming-events .events {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 210px;
+    margin: 50px auto;
+  }
+}
+footer {
+  height: 455px;
+  background-color: #ee4367;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .adress {
+  width: 700px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  margin-top: -100px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .number {
+  width: 700px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  margin-top: 100px;
+}
+footer .email {
+  width: 700px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 200px;
+}
+footer .ftlogo {
+  position: relative;
+  width: 150px;
+  height: 42px;
+  border: solid 2px white;
+  font-size: 25px;
+  margin-top: -300px;
+}
+footer .ftlogo span {
+  position: absolute;
+  bottom: -5px;
+  color: white;
+}
+footer .signup {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 400px;
+  margin-top: 300px;
+}
+footer .signup input {
+  height: 100%;
+  width: 529px;
+  background-color: #f56b88;
+  border: none;
+  color: rgba(238, 67, 103, 0.8);
+  font-size: 16px;
+  padding-left: 15px;
+}
+footer .signup ::-webkit-input-placeholder {
+  color: rgba(238, 67, 103, 0.8);
+  opacity: 1;
+}
+footer .signup ::-moz-placeholder {
+  color: rgba(238, 67, 103, 0.8);
+  opacity: 1;
+}
+footer .signup :-ms-input-placeholder {
+  color: rgba(238, 67, 103, 0.8);
+  opacity: 1;
+}
+footer .signup ::-ms-input-placeholder {
+  color: rgba(238, 67, 103, 0.8);
+  opacity: 1;
+}
+footer .signup ::placeholder {
+  color: rgba(238, 67, 103, 0.8);
+  opacity: 1;
+}
+footer .signup .button {
+  height: 100%;
+  width: 167px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 30px;
+  color: #ee4367;
+}
+
+@media only all and (max-width: 980px) {
+  .ftlogo {
+    padding: 0 30px;
+  }
+  .signup {
+    padding: 0 30px;
+  }
+}
+@media only all and (max-width: 800px) {
+  .ftlogo {
+    padding: 0 10px;
+  }
+  .signup {
+    padding: 0 10px;
+  }
+}
